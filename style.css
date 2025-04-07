@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.game-info { /* Style the wrapper */
+    display: flex;
+    justify-content: space-around; /* Space out money and message */
+    width: 90%;
+    max-width: 500px; /* Match canvas width */
+    margin-bottom: 10px;
+    align-items: center; /* Vertically align items */
+    min-height: 1.5em; /* Reserve space */
+}
+
+#money-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00796b; /* Teal color for money */
+}
+
+
+#message-area {
+    font-size: 1.1em; /* Slightly smaller than money */
+    font-weight: bold;
+    color: #d32f2f; /* Reddish color for messages */
+    text-align: right; /* Align message to the right */
+    flex-grow: 1; /* Allow message area to take remaining space */
+    padding-left: 10px;
+}
+
+
+.controls {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#pachinko-canvas {
+    border: 1px solid #333;
+    background-color: #e0e0ff; /* Light blue background */
+    display: block; /* Prevents extra space below canvas */
+}
+
+/* Removed separate margin/min-height for message-area as game-info handles it */

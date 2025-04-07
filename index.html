@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachinko Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Pachinko</h1>
+    <div class="game-info"> <!-- Added wrapper -->
+        <div id="money-display">Money: 10€</div> <!-- Money Display Element -->
+        <div id="message-area"></div>
+    </div>
+    <div class="controls">
+        <button id="start-button">Drop Ball (1€)</button> <!-- Updated button text -->
+        <button id="reset-button">Reset</button>
+    </div>
+    <canvas id="pachinko-canvas"></canvas>
+
+
+    <!-- Include Matter.js (use CDN or download) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <!-- Or download and use: <script src="js/vendor/matter.min.js"></script> -->
+
+    <!-- Load our JavaScript modules -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
